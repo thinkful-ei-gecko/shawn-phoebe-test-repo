@@ -27,3 +27,31 @@ function decode(sentence) {
 }
 
 console.log(decode('craft block argon meter bells brown croon droop'));
+
+
+/////////////////////////////////////////////////////////////////////
+
+function daysInMonth(month, leapyear) {
+  switch (month) {
+    case 'April':
+    case 'June':
+    case 'September':
+    case 'November':
+      return `${month} has 30 days.`;
+      break;
+
+    case 'February':
+      if (leapyear === true) {
+        return 'February has 29 days.'
+      }
+      else {
+        return 'February has 28 days.'
+      }
+      break;
+
+    default:
+      return `${month} has 31 days.`;
+  }
+}
+
+console.log(daysInMonth('February', true));
