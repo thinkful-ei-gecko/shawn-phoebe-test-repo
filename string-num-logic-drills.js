@@ -55,3 +55,29 @@ function daysInMonth(month, leapyear) {
 }
 
 console.log(daysInMonth('February', true));
+
+//Rock Paper Scissors
+
+function game (var1) {
+  // rock = 1, paper = 2, scissors 3
+
+  var1 = 1; 
+  const var2 = Math.floor(Math.random() * 3) + 1;
+  
+  console.log(var2);
+  // throw error if var 1 is anything other than 1 2 or 3
+
+  // you win
+  if ((var1 === 1 && var2 === 3) || (var1 === 2 && var2 === 1) || (var1 == 3 && var2 == 2)) {
+    return "You win.";
+  //cp wins 
+  } else if ((var1 === 1 && var2 === 2) || (var1 === 2 && var2 === 3) || (var1 === 3 && var2 === 1)) {
+    return "CP wins.";
+  // tie
+  } else {
+    return "Tie."
+  }
+
+}
+
+console.log(game());
