@@ -31,3 +31,43 @@ function beyond(num) {
 }
 
 beyond(100);
+
+//A code has been invented which replaces each character in a sentence with a five letter word. The first letter of each encoded word determines which of the remaining four characters contains the decoded character according to this table:
+
+function decoder {
+  // break down the sentence into an array of words (use splice(?) method)
+  
+
+  // loop through array and find 1. the index of the letter 
+  function encodedLetter(word) {
+    let firstLetter = word.charAt(0);
+    let index; 
+    if (firstLetter === "a") {
+      index = 2;
+    } else if (firstLetter === "b") {
+      index = 3;
+    } else if (firstLetter === "c") {
+      index = 4; 
+    } else if (firstLetter === "d") {
+      index = 5;
+    } else {
+      index = " "
+    }
+  }
+
+  // 2. the encoded letter. add the encoded letters to a variable encodedPhrase
+
+  // return variable encodedPhrase 
+
+}
+
+
+
+
+
+
+
+
+if index = " " {
+  break
+}
