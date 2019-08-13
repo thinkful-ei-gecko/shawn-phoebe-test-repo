@@ -3,6 +3,7 @@
 /* eslint-disable no-unreachable */
 /* eslint-disable strict */
 
+//Decoder
 function decode(sentence) {
   let splitSentence = sentence.split(' ');
   let result = '';
@@ -33,7 +34,12 @@ function decode(sentence) {
 console.log(decode('craft block argon meter bells brown croon droop'));
 
 
-/////////////////////////////////////////////////////////////////////
+
+
+
+
+
+//Days per month
 
 function daysInMonth(month, leapyear) {
   switch (month) {
